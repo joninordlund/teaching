@@ -1,3 +1,4 @@
+// Tehtävä 1
 const pushed = document.getElementById("pushed");
 
 function pushedFunc() {
@@ -5,28 +6,34 @@ function pushedFunc() {
 }
 pushed.addEventListener("click", pushedFunc);
 
+// Tehtävä 2
 const white = document.getElementById("whiteBtn");
 const green = document.getElementById("greenBtn");
 const yellow = document.getElementById("yellowBtn");
-const body = document.getElementsByTagName("body");
+const body = document.querySelector("body");
 
 console.log(white, green, yellow, body);
 
 function whiteFunc(ev) {
-  console.log(ev.clientX, ev.clientY);
   console.log("white func");
-  body[0].style.backgroundColor = "white";
+  body.style.backgroundColor = "white";
 }
 white.addEventListener("click", whiteFunc);
 
 function greenFunc() {
   console.log("green func");
-  body[0].style.backgroundColor = "green";
+  body.style.backgroundColor = "green";
 }
 green.addEventListener("click", greenFunc);
 
 function yellowFunc() {
   console.log("white func");
-  body[0].style.backgroundColor = "yellow";
+  body.style.backgroundColor = "yellow";
 }
 yellow.addEventListener("click", yellowFunc);
+
+// Tehtävä 3
+function mouseFunc(ev) {
+  console.log("X=", ev.clientX, "Y=", ev.clientY);
+}
+body.addEventListener("mousemove", mouseFunc);
