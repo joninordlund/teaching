@@ -9,12 +9,18 @@ body {
   padding: 20px;
   font-size: 24px;
 }
+
 p {
   margin-bottom: 20px;
 }
+
 h2 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+ol {
+  padding: 20px;
 }
 
 #pushed,
